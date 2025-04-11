@@ -6,7 +6,6 @@
     <title>Football League and Matches</title>
 </head>
 <body>
-    <!-- Navigation (Tabs) -->
     <ul>
         <li><a href="?league=PL">Premier League</a></li>
         <li><a href="?league=SA">Serie A</a></li>
