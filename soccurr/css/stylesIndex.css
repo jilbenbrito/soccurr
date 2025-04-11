@@ -1,0 +1,115 @@
+body {
+    background-image: url("http://soccurr.com/images/field1.gif"); /*sbwp7.jpg*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marker Felt', fantasy;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+#login {
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+#loginDiv {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    padding: 12px;
+    width: 80%;
+    height: 475px;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    border-top-color:#c1f3ff;
+    border-top-width: 75px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 12px;
+    border-radius: 1%;
+    border: 2px solid #000000;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.buttons {
+    width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 1%;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #4ff061;
+    opacity: 0.8;
+}
+
+#loginResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: #111111;
+}
+
+#signupDiv {
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+    padding: 12px;
+    width: 80%;
+    height: 500px;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+#signup {
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+#bottomtext {
+    font-size: 15px;
+    color: #000000;
+    margin-top: 10px;
+    text-align: left;
+}
+
+a { 
+   color: green;
+}

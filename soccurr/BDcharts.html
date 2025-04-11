@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bundesliga Charts</title>
+  <script type="text/javascript" src="js/md5.js"></script>
+  <script type="text/javascript" src="js/code.js"></script>
+  <link href="css/charts.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+    <button onclick="location.href='home.html'">
+        <img src="images/logosoccurr.png" id="logo" alt="soccurr Logo">
+    </button>
+<div class="league-buttons">
+    <button onclick="location.href='PLcharts.html'" title="Premier League">
+        <img src="images/englandflag.png" alt="Premier League">
+    </button>
+    <button onclick="location.href='PDcharts.html'" title="La Liga">
+        <img src="images/spainflag.png" alt="La Liga">
+    </button>
+    <button onclick="location.href='SAcharts.html'" title="Serie A">
+        <img src="images/italyflag.png" alt="Serie A">
+    </button>
+    <button onclick="location.href='BDcharts.html'" title="Bundesliga">
+        <img src="images/germanyflag.png" alt="Bundesliga">
+    </button>
+    <button onclick="location.href='L1charts.html'" title="Ligue 1">
+        <img src="images/franceflag.png" alt="Ligue 1">
+    </button>
+</div>
+    <button id="logout-button" onclick="doLogout()">Logout</button>
+</div>
+<h2>Bundesliga Standings</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pos</th>
+      <th>Team</th>
+      <th>Matches</th>
+      <th>Points</th>
+      <th>+/-</th>
+      <th>Goals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Bayern</td>
+      <td>28</td>
+      <td>60</td>
+      <td>54</td>
+      <td>81:27</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Leverkusen</td>
+      <td>28</td>
+      <td>52</td>
+      <td>29</td>
+      <td>53:34</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Frankfurt</td>
+      <td>28</td>
+      <td>48</td>
+      <td>13</td>
+      <td>55:42</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Mainz</td>
+      <td>28</td>
+      <td>46</td>
+      <td>14</td>
+      <td>46:32</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>RB Leipzig</td>
+      <td>28</td>
+      <td>45</td>
+      <td>9</td>
+      <td>44:35</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>M'gladbach</td>
+      <td>28</td>
+      <td>44</td>
+      <td>4</td>
+      <td>45:41</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Freiburg</td>
+      <td>28</td>
+      <td>42</td>
+      <td>-6</td>
+      <td>38:44</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Dortmund</td>
+      <td>28</td>
+      <td>41</td>
+      <td>9</td>
+      <td>52:43</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>Stuttgart</td>
+      <td>28</td>
+      <td>40</td>
+      <td>7</td>
+      <td>51:44</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Bremen</td>
+      <td>28</td>
+      <td>39</td>
+      <td>-8</td>
+      <td>45:53</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>Augsburg</td>
+      <td>28</td>
+      <td>39</td>
+      <td>-8</td>
+      <td>31:39</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>Wolfsburg</td>
+      <td>28</td>
+      <td>38</td>
+      <td>7</td>
+      <td>49:42</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>Union Berlin</td>
+      <td>28</td>
+      <td>33</td>
+      <td>-14</td>
+      <td>26:40</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>Hoffenheim</td>
+      <td>28</td>
+      <td>27</td>
+      <td>-18</td>
+      <td>34:52</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>St. Pauli</td>
+      <td>28</td>
+      <td>26</td>
+      <td>-11</td>
+      <td>23:34</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>Heidenheim</td>
+      <td>28</td>
+      <td>22</td>
+      <td>-21</td>
+      <td>32:53</td>
+    </tr>
+    <tr>
+      <td>17.</td>
+      <td>Bochum</td>
+      <td>28</td>
+      <td>20</td>
+      <td>-31</td>
+      <td>28:59</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>Holstein Kiel</td>
+      <td>28</td>
+      <td>18</td>
+      <td>-29</td>
+      <td>29:58</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Scorers</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Names</th>
+      <th>S</th>
+      <th>G</th>
+      <th>A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Harry Kane</td>
+      <td>31</td>
+      <td>23</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Patrik Schick</td>
+      <td>17</td>
+      <td>17</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Omar Marmoush</td>
+      <td>23</td>
+      <td>16</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Tim Kleindienst</td>
+      <td>20</td>
+      <td>15</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Jonathan Burkardt</td>
+      <td>17</td>
+      <td>15</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Sehrou Guirassy</td>
+      <td>17</td>
+      <td>15</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Hugo Ekitike</td>
+      <td>17</td>
+      <td>13</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Ermedin Demirovic</td>
+      <td>14</td>
+      <td>13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>Jamal Musiala</td>
+      <td>16</td>
+      <td>12</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Benjamin Sesko</td>
+      <td>15</td>
+      <td>11</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>Mohammed Amoura</td>
+      <td>17</td>
+      <td>10</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>Alassane Plea</td>
+      <td>16</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>Lenny Sane</td>
+      <td>14</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>Florian Wirtz</td>
+      <td>20</td>
+      <td>9</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>Nick Woltemade</td>
+      <td>11</td>
+      <td>9</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>Alexis Claude Maurice</td>
+      <td>11</td>
+      <td>9</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17.</td>
+      <td>Michael Olise</td>
+      <td>21</td>
+      <td>8</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>Phil Harres</td>
+      <td>9</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>19.</td>
+      <td>Andrej Kramaric</td>
+      <td>13</td>
+      <td>8</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>20.</td>
+      <td>Jonas Wind</td>
+      <td>11</td>
+      <td>8</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Recent Matches</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Home Team</th>
+      <th>Away Team</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025/04/06, 11h30</td>
+      <td>1. FC Union Berlin</td>
+      <td>VfL Wolfsburg</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/06, 09h30</td>
+      <td>FC St. Pauli 1910</td>
+      <td>Borussia Monchengladbach</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 12h30</td>
+      <td>SV Werder Bremen</td>
+      <td>Eintracht Frankfurt</td>
+      <td>2:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 09h30</td>
+      <td>SC Freiburg</td>
+      <td>Borussia Dortmund</td>
+      <td>1:4</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 09h30</td>
+      <td>RB Leipzig</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>3:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 09h30</td>
+      <td>VfL Bochum 1848</td>
+      <td>VfB Stuttgart</td>
+      <td>0:4</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 09h30</td>
+      <td>1. FSV Mainz 05</td>
+      <td>Holstein Kiel</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 09h30</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/04, 14h30</td>
+      <td>FC Augsburg</td>
+      <td>FC Bayern Munchen</td>
+      <td>1:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/30, 11h30</td>
+      <td>Borussia Dortmund</td>
+      <td>1. FSV Mainz 05</td>
+      <td>3:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/30, 09h30</td>
+      <td>SC Freiburg</td>
+      <td>1. FC Union Berlin</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 13h30</td>
+      <td>Eintracht Frankfurt</td>
+      <td>VfB Stuttgart</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 10h30</td>
+      <td>Holstein Kiel</td>
+      <td>SV Werder Bremen</td>
+      <td>0:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 10h30</td>
+      <td>VfL Wolfsburg</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 10h30</td>
+      <td>Borussia Monchengladbach</td>
+      <td>RB Leipzig</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 10h30</td>
+      <td>FC Bayern Munchen</td>
+      <td>FC St. Pauli 1910</td>
+      <td>3:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 10h30</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>FC Augsburg</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/28, 15h30</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>VfL Bochum 1848</td>
+      <td>3:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 14h30</td>
+      <td>VfB Stuttgart</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>3:4</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 12h30</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>Holstein Kiel</td>
+      <td>3:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 11h20</td>
+      <td>VfL Bochum 1848</td>
+      <td>Eintracht Frankfurt</td>
+      <td>1:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 13h30</td>
+      <td>RB Leipzig</td>
+      <td>Borussia Dortmund</td>
+      <td>2:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 10h30</td>
+      <td>1. FC Union Berlin</td>
+      <td>FC Bayern Munchen</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 10h30</td>
+      <td>SV Werder Bremen</td>
+      <td>Borussia Monchengladbach</td>
+      <td>2:4</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 10h30</td>
+      <td>FC Augsburg</td>
+      <td>VfL Wolfsburg</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 10h30</td>
+      <td>1. FSV Mainz 05</td>
+      <td>SC Freiburg</td>
+      <td>2:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/14, 15h30</td>
+      <td>FC St. Pauli 1910</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/09, 12h30</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/09, 10h30</td>
+      <td>Eintracht Frankfurt</td>
+      <td>1. FC Union Berlin</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/08, 12h30</td>
+      <td>SC Freiburg</td>
+      <td>RB Leipzig</td>
+      <td>0:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/08, 09h30</td>
+      <td>Borussia Dortmund</td>
+      <td>FC Augsburg</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/08, 09h30</td>
+      <td>FC Bayern Munchen</td>
+      <td>VfL Bochum 1848</td>
+      <td>2:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/08, 09h30</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>SV Werder Bremen</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/08, 09h30</td>
+      <td>VfL Wolfsburg</td>
+      <td>FC St. Pauli 1910</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/08, 09h30</td>
+      <td>Holstein Kiel</td>
+      <td>VfB Stuttgart</td>
+      <td>2:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/07, 14h30</td>
+      <td>Borussia Monchengladbach</td>
+      <td>1. FSV Mainz 05</td>
+      <td>1:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/02, 11h30</td>
+      <td>FC Augsburg</td>
+      <td>SC Freiburg</td>
+      <td>0:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/02, 09h30</td>
+      <td>1. FC Union Berlin</td>
+      <td>Holstein Kiel</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/01, 12h30</td>
+      <td>Eintracht Frankfurt</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>1:4</td>
+    </tr>
+    <tr>
+      <td>2025/03/01, 09h30</td>
+      <td>FC St. Pauli 1910</td>
+      <td>Borussia Dortmund</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/01, 09h30</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>Borussia Monchengladbach</td>
+      <td>0:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/01, 09h30</td>
+      <td>RB Leipzig</td>
+      <td>1. FSV Mainz 05</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/01, 09h30</td>
+      <td>SV Werder Bremen</td>
+      <td>VfL Wolfsburg</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/01, 09h30</td>
+      <td>VfL Bochum 1848</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/02/28, 14h30</td>
+      <td>VfB Stuttgart</td>
+      <td>FC Bayern Munchen</td>
+      <td>1:3</td>
+    </tr>
+    <tr>
+      <td>2025/02/23, 13h30</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>VfB Stuttgart</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/02/23, 11h30</td>
+      <td>FC Bayern Munchen</td>
+      <td>Eintracht Frankfurt</td>
+      <td>4:0</td>
+    </tr>
+    <tr>
+      <td>2025/02/23, 09h30</td>
+      <td>RB Leipzig</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>2:2</td>
+    </tr>
+    <tr>
+      <td>2025/02/22, 12h30</td>
+      <td>Borussia Dortmund</td>
+      <td>1. FC Union Berlin</td>
+      <td>6:0</td>
+    </tr>
+    <tr>
+      <td>2025/02/22, 09h30</td>
+      <td>1. FSV Mainz 05</td>
+      <td>FC St. Pauli 1910</td>
+      <td>2:0</td>
+    </tr>
+    <tr>
+      <td>2025/02/22, 09h30</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>FC Augsburg</td>
+      <td>2:2</td>
+    </tr>
+    <tr>
+      <td>2025/02/22, 09h30</td>
+      <td>SV Werder Bremen</td>
+      <td>SC Freiburg</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/02/21, 14h30</td>
+      <td>VfL Wolfsburg</td>
+      <td>VfL Bochum 1848</td>
+      <td>2:2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Upcoming Matches</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date and Time</th>
+      <th>Home Team</th>
+      <th>Away Team</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025/04/11, 14h30</td>
+      <td>VfL Wolfsburg</td>
+      <td>RB Leipzig</td>
+    </tr>
+    <tr>
+      <td>2025/04/12, 09h30</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>1. FC Union Berlin</td>
+    </tr>
+    <tr>
+      <td>2025/04/12, 09h30</td>
+      <td>Holstein Kiel</td>
+      <td>FC St. Pauli 1910</td>
+    </tr>
+    <tr>
+      <td>2025/04/12, 09h30</td>
+      <td>Borussia Mönchengladbach</td>
+      <td>SC Freiburg</td>
+    </tr>
+    <tr>
+      <td>2025/04/12, 09h30</td>
+      <td>VfL Bochum 1848</td>
+      <td>FC Augsburg</td>
+    </tr>
+    <tr>
+      <td>2025/04/12, 09h30</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>1. FSV Mainz 05</td>
+    </tr>
+    <tr>
+      <td>2025/04/12, 12h30</td>
+      <td>FC Bayern München</td>
+      <td>Borussia Dortmund</td>
+    </tr>
+    <tr>
+      <td>2025/04/13, 09h30</td>
+      <td>VfB Stuttgart</td>
+      <td>SV Werder Bremen</td>
+    </tr>
+    <tr>
+      <td>2025/04/13, 11h30</td>
+      <td>Eintracht Frankfurt</td>
+      <td>1. FC Heidenheim 1846</td>
+    </tr>
+    <tr>
+      <td>2025/04/19, 09h30</td>
+      <td>1. FSV Mainz 05</td>
+      <td>VfL Wolfsburg</td>
+    </tr>
+    <tr>
+      <td>2025/04/19, 09h30</td>
+      <td>SV Werder Bremen</td>
+      <td>VfL Bochum 1848</td>
+    </tr>
+    <tr>
+      <td>2025/04/19, 09h30</td>
+      <td>SC Freiburg</td>
+      <td>TSG 1899 Hoffenheim</td>
+    </tr>
+    <tr>
+      <td>2025/04/19, 09h30</td>
+      <td>RB Leipzig</td>
+      <td>Holstein Kiel</td>
+    </tr>
+    <tr>
+      <td>2025/04/19, 09h30</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>FC Bayern München</td>
+    </tr>
+    <tr>
+      <td>2025/04/19, 12h30</td>
+      <td>1. FC Union Berlin</td>
+      <td>VfB Stuttgart</td>
+    </tr>
+    <tr>
+      <td>2025/04/20, 09h30</td>
+      <td>FC Augsburg</td>
+      <td>Eintracht Frankfurt</td>
+    </tr>
+    <tr>
+      <td>2025/04/20, 11h30</td>
+      <td>Borussia Dortmund</td>
+      <td>Borussia Mönchengladbach</td>
+    </tr>
+    <tr>
+      <td>2025/04/20, 13h30</td>
+      <td>FC St. Pauli 1910</td>
+      <td>Bayer 04 Leverkusen</td>
+    </tr>
+    <tr>
+      <td>2025/04/25, 14h30</td>
+      <td>VfB Stuttgart</td>
+      <td>1. FC Heidenheim 1846</td>
+    </tr>
+    <tr>
+      <td>2025/04/26, 09h30</td>
+      <td>Bayer 04 Leverkusen</td>
+      <td>FC Augsburg</td>
+    </tr>
+    <tr>
+      <td>2025/04/26, 09h30</td>
+      <td>Holstein Kiel</td>
+      <td>Borussia Mönchengladbach</td>
+    </tr>
+    <tr>
+      <td>2025/04/26, 09h30</td>
+      <td>TSG 1899 Hoffenheim</td>
+      <td>Borussia Dortmund</td>
+    </tr>
+    <tr>
+      <td>2025/04/26, 09h30</td>
+      <td>VfL Wolfsburg</td>
+      <td>SC Freiburg</td>
+    </tr>
+    <tr>
+      <td>2025/04/26, 09h30</td>
+      <td>FC Bayern München</td>
+      <td>1. FSV Mainz 05</td>
+    </tr>
+    <tr>
+      <td>2025/04/26, 12h30</td>
+      <td>Eintracht Frankfurt</td>
+      <td>RB Leipzig</td>
+    </tr>
+    <tr>
+      <td>2025/04/27, 09h30</td>
+      <td>VfL Bochum 1848</td>
+      <td>1. FC Union Berlin</td>
+    </tr>
+    <tr>
+      <td>2025/04/27, 11h30</td>
+      <td>SV Werder Bremen</td>
+      <td>FC St. Pauli 1910</td>
+    </tr>
+    <tr>
+      <td>2025/05/02, 14h30</td>
+      <td>1. FC Heidenheim 1846</td>
+      <td>VfL Bochum 1848</td>
+    </tr>
+    <tr>
+      <td>2025/05/03, 09h30</td>
+      <td>RB Leipzig</td>
+      <td>FC Bayern München</td>
+    </tr>
+    <tr>
+      <td>2025/05/03, 09h30</td>
+      <td>FC St. Pauli 1910</td>
+      <td>VfB Stuttgart</td>
+    </tr>
+  </tbody>
+</table>

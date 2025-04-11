@@ -1,0 +1,110 @@
+body{
+    font-family: 'Marker Felt', fantasy;
+    text-align: center;
+    background-image: url("http://soccurr.com/images/stadium1.gif"); /*issue in wallpaper, worry about later*/
+    background-size: cover;
+    background-position: center;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    position: relative;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.70);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+#header h1{
+    font-size: 3rem;
+    color: #333;
+}
+
+#header > button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    align-items: center;
+}
+
+#header .league-buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 50px;
+}
+
+#logo{
+    height: 150px;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+}
+
+.league-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.league-buttons button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.league-buttons img{
+    width: 100px;
+    height: auto;
+}
+
+#logout-button {
+    color: rgb(0, 0, 0);
+    padding: 10px 16px;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 15px;
+    border-width: 20px;
+    font-family: 'Marker Felt', fantasy;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+#logout-button:hover {
+    background-color: #49b9e5;
+    padding: 15px 30px;
+}
+
+#about-us {
+    max-width: 800px;
+    margin: 250px auto; 
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Marker Felt', fantasy;
+    text-align: center;
+    color: #000042;
+}
+
+#about-us h2 {
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+#about-us p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}

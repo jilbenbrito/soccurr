@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Charts</title>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <link href="css/charts.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <button onclick="location.href='home.html'">
+            <img src="images/logosoccurr.png" id="logo" alt="soccurr Logo">
+        </button>
+    <div class="league-buttons">
+        <button onclick="location.href='PLcharts.html'" title="Premier League">
+            <img src="images/englandflag.png" alt="Premier League">
+        </button>
+        <button onclick="location.href='PDcharts.html'" title="La Liga">
+            <img src="images/spainflag.png" alt="La Liga">
+        </button>
+        <button onclick="location.href='SAcharts.html'" title="Serie A">
+            <img src="images/italyflag.png" alt="Serie A">
+        </button>
+        <button onclick="location.href='BDcharts.html'" title="Bundesliga">
+            <img src="images/germanyflag.png" alt="Bundesliga">
+        </button>
+        <button onclick="location.href='L1charts.html'" title="Ligue 1">
+            <img src="images/franceflag.png" alt="Ligue 1">
+        </button>
+    </div>
+    <button id="logout-button" onclick="doLogout()">Logout</button>
+    </div>
+<h2>Premier League Standings</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pos</th>
+      <th>Team</th>
+      <th>Matches</th>
+      <th>Points</th>
+      <th>+/-</th>
+      <th>Goals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Liverpool</td>
+      <td>31</td>
+      <td>73</td>
+      <td>42</td>
+      <td>72:30</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Arsenal</td>
+      <td>31</td>
+      <td>62</td>
+      <td>30</td>
+      <td>56:26</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Nottingham</td>
+      <td>31</td>
+      <td>57</td>
+      <td>14</td>
+      <td>51:37</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Chelsea</td>
+      <td>31</td>
+      <td>53</td>
+      <td>17</td>
+      <td>54:37</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Newcastle</td>
+      <td>30</td>
+      <td>53</td>
+      <td>13</td>
+      <td>52:39</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Man City</td>
+      <td>31</td>
+      <td>52</td>
+      <td>17</td>
+      <td>57:40</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Aston Villa</td>
+      <td>31</td>
+      <td>51</td>
+      <td>0</td>
+      <td>46:46</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Fulham</td>
+      <td>31</td>
+      <td>48</td>
+      <td>5</td>
+      <td>47:42</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>Brighton Hove</td>
+      <td>31</td>
+      <td>47</td>
+      <td>2</td>
+      <td>49:47</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Bournemouth</td>
+      <td>31</td>
+      <td>45</td>
+      <td>11</td>
+      <td>51:40</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>Crystal Palace</td>
+      <td>30</td>
+      <td>43</td>
+      <td>4</td>
+      <td>39:35</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>Brentford</td>
+      <td>31</td>
+      <td>42</td>
+      <td>4</td>
+      <td>51:47</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>Man United</td>
+      <td>31</td>
+      <td>38</td>
+      <td>-4</td>
+      <td>37:41</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>Tottenham</td>
+      <td>31</td>
+      <td>37</td>
+      <td>13</td>
+      <td>58:45</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>Everton</td>
+      <td>31</td>
+      <td>35</td>
+      <td>-5</td>
+      <td>33:38</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>West Ham</td>
+      <td>31</td>
+      <td>35</td>
+      <td>-17</td>
+      <td>35:52</td>
+    </tr>
+    <tr>
+      <td>17.</td>
+      <td>Wolverhampton</td>
+      <td>31</td>
+      <td>32</td>
+      <td>-16</td>
+      <td>43:59</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>Ipswich Town</td>
+      <td>31</td>
+      <td>20</td>
+      <td>-34</td>
+      <td>31:65</td>
+    </tr>
+    <tr>
+      <td>19.</td>
+      <td>Leicester City</td>
+      <td>31</td>
+      <td>17</td>
+      <td>-45</td>
+      <td>25:70</td>
+    </tr>
+    <tr>
+      <td>20.</td>
+      <td>Southampton</td>
+      <td>31</td>
+      <td>10</td>
+      <td>-51</td>
+      <td>23:74</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Top Scorers</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Team</th>
+      <th>Player</th>
+      <th>S</th>
+      <th>G</th>
+      <th>A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Liverpool</td>
+      <td>Mohamed Salah</td>
+      <td>43</td>
+      <td>27</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Manchester City</td>
+      <td>Erling Haaland</td>
+      <td>24</td>
+      <td>21</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Newcastle United</td>
+      <td>Alexander Isak</td>
+      <td>25</td>
+      <td>20</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Nottingham Forest</td>
+      <td>Chris Wood</td>
+      <td>21</td>
+      <td>18</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Brentford</td>
+      <td>Bryan Mbeumo</td>
+      <td>21</td>
+      <td>16</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Chelsea</td>
+      <td>Cole Palmer</td>
+      <td>22</td>
+      <td>14</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Wolverhampton Wanderers</td>
+      <td>Matheus Cunha</td>
+      <td>18</td>
+      <td>13</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Aston Villa</td>
+      <td>Ollie Watkins</td>
+      <td>18</td>
+      <td>13</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>Brentford</td>
+      <td>Yoane Wissa</td>
+      <td>15</td>
+      <td>13</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Crystal Palace</td>
+      <td>Jean-Philippe Mateta</td>
+      <td>15</td>
+      <td>13</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>Hull City</td>
+      <td>Liam Delap</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>AFC Bournemouth</td>
+      <td>Justin Kluivert</td>
+      <td>18</td>
+      <td>12</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>Wolverhampton Wanderers</td>
+      <td>Jørgen Strand Larsen</td>
+      <td>13</td>
+      <td>11</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>Nottingham Forest</td>
+      <td>Brennan Johnson</td>
+      <td>14</td>
+      <td>11</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>Liverpool</td>
+      <td>Luis Díaz</td>
+      <td>16</td>
+      <td>10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>Fulham</td>
+      <td>Raúl Jiménez</td>
+      <td>13</td>
+      <td>10</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>17.</td>
+      <td>Tottenham Hotspur</td>
+      <td>James Maddison</td>
+      <td>16</td>
+      <td>9</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>Arsenal</td>
+      <td>Kai Havertz</td>
+      <td>12</td>
+      <td>9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>19.</td>
+      <td>Chelsea</td>
+      <td>Nicolas Jackson</td>
+      <td>14</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>20.</td>
+      <td>Porto</td>
+      <td>Evanilson</td>
+      <td>10</td>
+      <td>9</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Recent Matches</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Home Team</th>
+      <th>Away Team</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025/04/06</td>
+      <td>Man Utd</td>
+      <td>Man City</td>
+      <td>0:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/06</td>
+      <td>Brentford</td>
+      <td>Chelsea</td>
+      <td>0:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/06</td>
+      <td>Fulham</td>
+      <td>Liverpool</td>
+      <td>3:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/06</td>
+      <td>Spurs</td>
+      <td>Southampton</td>
+      <td>3:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/05</td>
+      <td>Aston Villa</td>
+      <td>Nottm Forest</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/05</td>
+      <td>C Palace</td>
+      <td>Brighton</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/05</td>
+      <td>Ipswich</td>
+      <td>Wolves</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/05</td>
+      <td>West Ham</td>
+      <td>AFC Bournemouth</td>
+      <td>2:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/05</td>
+      <td>Everton</td>
+      <td>Arsenal</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/03</td>
+      <td>Chelsea</td>
+      <td>Spurs</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/02</td>
+      <td>Liverpool</td>
+      <td>Everton</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/02</td>
+      <td>AFC Bournemouth</td>
+      <td>Ipswich</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/02</td>
+      <td>Brighton</td>
+      <td>Aston Villa</td>
+      <td>3:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/02</td>
+      <td>Man City</td>
+      <td>Leicester</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/02</td>
+      <td>Newcastle</td>
+      <td>Brentford</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/02</td>
+      <td>Southampton</td>
+      <td>C Palace</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/01</td>
+      <td>Nottm Forest</td>
+      <td>Man Utd</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/01</td>
+      <td>Arsenal</td>
+      <td>Fulham</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/01</td>
+      <td>Wolves</td>
+      <td>West Ham</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/16</td>
+      <td>Leicester</td>
+      <td>Man Utd</td>
+      <td>0:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/16</td>
+      <td>Arsenal</td>
+      <td>Chelsea</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/16</td>
+      <td>Fulham</td>
+      <td>Spurs</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/15</td>
+      <td>AFC Bournemouth</td>
+      <td>Brentford</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/15</td>
+      <td>Everton</td>
+      <td>West Ham</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/15</td>
+      <td>Ipswich</td>
+      <td>Nottm Forest</td>
+      <td>4:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/15</td>
+      <td>Man City</td>
+      <td>Brighton</td>
+      <td>2:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/15</td>
+      <td>Southampton</td>
+      <td>Wolves</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/10</td>
+      <td>West Ham</td>
+      <td>Newcastle</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/09</td>
+      <td>Man Utd</td>
+      <td>Arsenal</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/09</td>
+      <td>Chelsea</td>
+      <td>Leicester</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/09</td>
+      <td>Spurs</td>
+      <td>AFC Bournemouth</td>
+      <td>2:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/08</td>
+      <td>Wolves</td>
+      <td>Everton</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/08</td>
+      <td>Brentford</td>
+      <td>Aston Villa</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/08</td>
+      <td>Brighton</td>
+      <td>Fulham</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/08</td>
+      <td>C Palace</td>
+      <td>Ipswich</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/08</td>
+      <td>Liverpool</td>
+      <td>Southampton</td>
+      <td>1:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/08</td>
+      <td>Nottm Forest</td>
+      <td>Man City</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/02/27</td>
+      <td>West Ham</td>
+      <td>Leicester</td>
+      <td>2:0</td>
+    </tr>
+    <tr>
+      <td>2025/02/26</td>
+      <td>Liverpool</td>
+      <td>Newcastle</td>
+      <td>2:0</td>
+    </tr>
+    <tr>
+      <td>2025/02/26</td>
+      <td>Brentford</td>
+      <td>Everton</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/02/26</td>
+      <td>Man Utd</td>
+      <td>Ipswich</td>
+      <td>3:2</td>
+    </tr>
+    <tr>
+      <td>2025/02/26</td>
+      <td>Nottm Forest</td>
+      <td>Arsenal</td>
+      <td>0:0</td>
+    </tr>
+    <tr>
+      <td>2025/02/26</td>
+      <td>Spurs</td>
+      <td>Man City</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/02/25</td>
+      <td>Chelsea</td>
+      <td>Southampton</td>
+      <td>4:0</td>
+    </tr>
+    <tr>
+      <td>2025/02/25</td>
+      <td>Brighton</td>
+      <td>AFC Bournemouth</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/02/25</td>
+      <td>C Palace</td>
+      <td>Aston Villa</td>
+      <td>1:4</td>
+    </tr>
+    <tr>
+      <td>2025/02/25</td>
+      <td>Wolves</td>
+      <td>Fulham</td>
+      <td>2:1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Upcoming Matches</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Time (EDT)</th>
+      <th>Match</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025/04/12</td>
+      <td>07:30</td>
+      <td>Man City vs C Palace</td>
+    </tr>
+    <tr>
+      <td>2025/04/12</td>
+      <td>10:00</td>
+      <td>Brighton vs Leicester</td>
+    </tr>
+    <tr>
+      <td>2025/04/12</td>
+      <td>10:00</td>
+      <td>Nottm Forest vs Everton</td>
+    </tr>
+    <tr>
+      <td>2025/04/12</td>
+      <td>10:00</td>
+      <td>Southampton vs Aston Villa</td>
+    </tr>
+    <tr>
+      <td>2025/04/12</td>
+      <td>12:30</td>
+      <td>Arsenal vs Brentford</td>
+    </tr>
+    <tr>
+      <td>2025/04/13</td>
+      <td>09:00</td>
+      <td>Chelsea vs Ipswich</td>
+    </tr>
+    <tr>
+      <td>2025/04/13</td>
+      <td>09:00</td>
+      <td>Liverpool vs West Ham</td>
+    </tr>
+    <tr>
+      <td>2025/04/13</td>
+      <td>09:00</td>
+      <td>Wolves vs Spurs</td>
+    </tr>
+    <tr>
+      <td>2025/04/13</td>
+      <td>11:30</td>
+      <td>Newcastle vs Man Utd</td>
+    </tr>
+    <tr>
+      <td>2025/04/14</td>
+      <td>15:00</td>
+      <td>AFC Bournemouth vs Fulham</td>
+    </tr>
+    <tr>
+      <td>2025/04/16</td>
+      <td>14:30</td>
+      <td>Newcastle vs C Palace</td>
+    </tr>
+    <tr>
+      <td>2025/04/19</td>
+      <td>10:00</td>
+      <td>Brentford vs Brighton</td>
+    </tr>
+    <tr>
+      <td>2025/04/19</td>
+      <td>10:00</td>
+      <td>C Palace vs AFC Bournemouth</td>
+    </tr>
+    <tr>
+      <td>2025/04/19</td>
+      <td>10:00</td>
+      <td>Everton vs Man City</td>
+    </tr>
+    <tr>
+      <td>2025/04/19</td>
+      <td>10:00</td>
+      <td>West Ham vs Southampton</td>
+    </tr>
+    <tr>
+      <td>2025/04/19</td>
+      <td>12:30</td>
+      <td>Aston Villa vs Newcastle</td>
+    </tr>
+    <tr>
+      <td>2025/04/20</td>
+      <td>09:00</td>
+      <td>Fulham vs Chelsea</td>
+    </tr>
+    <tr>
+      <td>2025/04/20</td>
+      <td>09:00</td>
+      <td>Ipswich vs Arsenal</td>
+    </tr>
+    <tr>
+      <td>2025/04/20</td>
+      <td>09:00</td>
+      <td>Man Utd vs Wolves</td>
+    </tr>
+    <tr>
+      <td>2025/04/20</td>
+      <td>11:30</td>
+      <td>Leicester vs Liverpool</td>
+    </tr>
+    <tr>
+      <td>2025/04/21</td>
+      <td>15:00</td>
+      <td>Spurs vs Nottm Forest</td>
+    </tr>
+    <tr>
+      <td>2025/04/26</td>
+      <td>07:30</td>
+      <td>Chelsea vs Everton</td>
+    </tr>
+    <tr>
+      <td>2025/04/26</td>
+      <td>10:00</td>
+      <td>Brighton vs West Ham</td>
+    </tr>
+    <tr>
+      <td>2025/04/26</td>
+      <td>10:00</td>
+      <td>Newcastle vs Ipswich</td>
+    </tr>
+    <tr>
+      <td>2025/04/26</td>
+      <td>10:00</td>
+      <td>Southampton vs Fulham</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

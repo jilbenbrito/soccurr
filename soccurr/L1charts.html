@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ligue 1 Charts</title>
+  <script type="text/javascript" src="js/md5.js"></script>
+  <script type="text/javascript" src="js/code.js"></script>
+  <link href="css/charts.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+    <button onclick="location.href='home.html'">
+        <img src="images/logosoccurr.png" id="logo" alt="soccurr Logo">
+    </button>
+<div class="league-buttons">
+    <button onclick="location.href='PLcharts.html'" title="Premier League">
+        <img src="images/englandflag.png" alt="Premier League">
+    </button>
+    <button onclick="location.href='PDcharts.html'" title="La Liga">
+        <img src="images/spainflag.png" alt="La Liga">
+    </button>
+    <button onclick="location.href='SAcharts.html'" title="Serie A">
+        <img src="images/italyflag.png" alt="Serie A">
+    </button>
+    <button onclick="location.href='BDcharts.html'" title="Bundesliga">
+        <img src="images/germanyflag.png" alt="Bundesliga">
+    </button>
+    <button onclick="location.href='L1charts.html'" title="Ligue 1">
+        <img src="images/franceflag.png" alt="Ligue 1">
+    </button>
+</div>
+    <button id="logout-button" onclick="doLogout()">Logout</button>
+</div>
+<h2>Ligue 1 Standings</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pos</th>
+      <th>Team</th>
+      <th>Matches</th>
+      <th>Points</th>
+      <th>+/-</th>
+      <th>Goals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>PSG</td>
+      <td>28</td>
+      <td>74</td>
+      <td>54</td>
+      <td>88:26</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Marseille</td>
+      <td>28</td>
+      <td>62</td>
+      <td>19</td>
+      <td>57:38</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Monaco</td>
+      <td>28</td>
+      <td>50</td>
+      <td>19</td>
+      <td>54:35</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Strasbourg</td>
+      <td>28</td>
+      <td>49</td>
+      <td>11</td>
+      <td>46:35</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Olympique Lyon</td>
+      <td>28</td>
+      <td>48</td>
+      <td>16</td>
+      <td>54:38</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Nice</td>
+      <td>28</td>
+      <td>47</td>
+      <td>17</td>
+      <td>52:35</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Lille</td>
+      <td>28</td>
+      <td>47</td>
+      <td>12</td>
+      <td>42:30</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Brest</td>
+      <td>28</td>
+      <td>43</td>
+      <td>1</td>
+      <td>44:43</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>RC Lens</td>
+      <td>28</td>
+      <td>42</td>
+      <td>2</td>
+      <td>32:30</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Auxerre</td>
+      <td>28</td>
+      <td>38</td>
+      <td>0</td>
+      <td>39:39</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>Toulouse</td>
+      <td>28</td>
+      <td>34</td>
+      <td>1</td>
+      <td>37:36</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>Stade Rennais</td>
+      <td>28</td>
+      <td>32</td>
+      <td>0</td>
+      <td>38:38</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>Nantes</td>
+      <td>28</td>
+      <td>30</td>
+      <td>-14</td>
+      <td>33:47</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>Angers SCO</td>
+      <td>28</td>
+      <td>27</td>
+      <td>-20</td>
+      <td>26:46</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>Le Havre</td>
+      <td>28</td>
+      <td>27</td>
+      <td>-26</td>
+      <td>31:57</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>Stade de Reims</td>
+      <td>28</td>
+      <td>26</td>
+      <td>-13</td>
+      <td>29:42</td>
+    </tr>
+    <tr>
+      <td>17.</td>
+      <td>Saint-Étienne</td>
+      <td>28</td>
+      <td>23</td>
+      <td>-36</td>
+      <td>28:64</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>Montpellier</td>
+      <td>28</td>
+      <td>15</td>
+      <td>-40</td>
+      <td>21:61</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Scorers</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Names</th>
+      <th>S</th>
+      <th>G</th>
+      <th>A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>Ousmane Dembélé</td>
+      <td>27</td>
+      <td>21</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Mason Greenwood</td>
+      <td>19</td>
+      <td>16</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Jonathan David</td>
+      <td>18</td>
+      <td>14</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Arnaud Kalimuendo</td>
+      <td>14</td>
+      <td>13</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Bradley Barcola</td>
+      <td>23</td>
+      <td>13</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Emanuel Emegha</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Mileta Elezeth</td>
+      <td>14</td>
+      <td>12</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Alexandre Lacazette</td>
+      <td>13</td>
+      <td>11</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>Evann Guessand</td>
+      <td>17</td>
+      <td>11</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Ludovic Ajorque</td>
+      <td>11</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>Hamed Traore</td>
+      <td>12</td>
+      <td>10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>Gaetan Laborde</td>
+      <td>14</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>Keito Nakamura</td>
+      <td>11</td>
+      <td>9</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>Andrey Santos</td>
+      <td>10</td>
+      <td>9</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>15.</td>
+      <td>Lucas Stassin</td>
+      <td>13</td>
+      <td>9</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>16.</td>
+      <td>Gaetan Perrin</td>
+      <td>16</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>17.</td>
+      <td>Georges Mikautadze</td>
+      <td>12</td>
+      <td>8</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>18.</td>
+      <td>Abdulaye Toure</td>
+      <td>9</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>19.</td>
+      <td>Mathis Abline</td>
+      <td>9</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>20.</td>
+      <td>Zuriko Davitashvili</td>
+      <td>13</td>
+      <td>7</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Recent Matches</h2>
+<div class="separator"></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Home Team</th>
+      <th>Away Team</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025/04/06, 14h45</td>
+      <td>Olympique de Marseille</td>
+      <td>Toulouse FC</td>
+      <td>3:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/06, 11h15</td>
+      <td>Montpellier HSC</td>
+      <td>Le Havre AC</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/04/06, 11h15</td>
+      <td>Stade de Reims</td>
+      <td>RC Strasbourg Alsace</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/06, 11h15</td>
+      <td>Stade Rennais FC 1901</td>
+      <td>AJ Auxerre</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/06, 09h00</td>
+      <td>Racing Club de Lens</td>
+      <td>AS Saint-Étienne</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 15h05</td>
+      <td>Olympique Lyonnais</td>
+      <td>Lille OSC</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 13h00</td>
+      <td>Stade Brestois 29</td>
+      <td>AS Monaco FC</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/04/05, 11h00</td>
+      <td>Paris Saint-Germain FC</td>
+      <td>Angers SCO</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/04/04, 14h45</td>
+      <td>OGC Nice</td>
+      <td>FC Nantes</td>
+      <td>1:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/30, 14h45</td>
+      <td>Lille OSC</td>
+      <td>Racing Club de Lens</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/30, 11h15</td>
+      <td>Le Havre AC</td>
+      <td>FC Nantes</td>
+      <td>3:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/30, 11h15</td>
+      <td>AJ Auxerre</td>
+      <td>Montpellier HSC</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/30, 11h15</td>
+      <td>Angers SCO</td>
+      <td>Stade Rennais FC 1901</td>
+      <td>0:3</td>
+    </tr>
+    <tr>
+      <td>2025/03/30, 09h00</td>
+      <td>Toulouse FC</td>
+      <td>Stade Brestois 29</td>
+      <td>2:4</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 16h05</td>
+      <td>AS Monaco FC</td>
+      <td>OGC Nice</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 14h00</td>
+      <td>AS Saint-Étienne</td>
+      <td>Paris Saint-Germain FC</td>
+      <td>1:6</td>
+    </tr>
+    <tr>
+      <td>2025/03/29, 12h00</td>
+      <td>Stade de Reims</td>
+      <td>Olympique de Marseille</td>
+      <td>3:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/28, 15h45</td>
+      <td>RC Strasbourg Alsace</td>
+      <td>Olympique Lyonnais</td>
+      <td>4:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 15h45</td>
+      <td>Paris Saint-Germain FC</td>
+      <td>Olympique de Marseille</td>
+      <td>3:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 12h15</td>
+      <td>Montpellier HSC</td>
+      <td>AS Saint-Étienne</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 12h15</td>
+      <td>RC Strasbourg Alsace</td>
+      <td>Toulouse FC</td>
+      <td>2:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 12h15</td>
+      <td>Stade Brestois 29</td>
+      <td>Stade de Reims</td>
+      <td>0:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/16, 10h00</td>
+      <td>Olympique Lyonnais</td>
+      <td>Le Havre AC</td>
+      <td>4:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 16h05</td>
+      <td>Racing Club de Lens</td>
+      <td>Stade Rennais FC 1901</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 14h00</td>
+      <td>Angers SCO</td>
+      <td>AS Monaco FC</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/15, 12h00</td>
+      <td>FC Nantes</td>
+      <td>Lille OSC</td>
+      <td>1:0</td>
+    </tr>
+    <tr>
+      <td>2025/03/14, 15h45</td>
+      <td>OGC Nice</td>
+      <td>AJ Auxerre</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/09, 15h45</td>
+      <td>OGC Nice</td>
+      <td>Olympique Lyonnais</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/09, 12h15</td>
+      <td>FC Nantes</td>
+      <td>RC Strasbourg Alsace</td>
+      <td>0:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/09, 12h15</td>
+      <td>Le Havre AC</td>
+      <td>AS Saint-Étienne</td>
+      <td>1:1</td>
+    </tr>
+    <tr>
+      <td>2025/03/09, 12h15</td>
+      <td>Stade de Reims</td>
+      <td>AJ Auxerre</td>
+      <td>0:2</td>
+    </tr>
+    <tr>
+      <td>2025/03/09, 10h00</td>
+      <td>Stade Brestois 29</td>
+      <td>Angers SCO</td>
+      <td>2:0</td>
+    </tr>
