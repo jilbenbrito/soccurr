@@ -1,6 +1,9 @@
 # soccurr
 CIS4004 FINAL PROJECT
 
+Deployment:
+DigitalOcean LAMP stack droplet, but anyone can access our website through www.soccurr.com
+
 Citations:
 AI'S used ChatGPT, and Gemini.
 
@@ -10,7 +13,7 @@ How can I optimize this chart's layout for accessibility and screen readers? (al
 Limit all text to only English keyboard characters, no special characters (all names with special characters)
 how would I go about connecting an external API to a Lamp Stack Server? (PHP file)
 How could I make the charts fit the whole screen with html? (charts)
-How can I get the logout button to the right of the header? (home page)
+How can I get the logout button to the far right of the header? (home page)
 Why isn’t my chart displaying even though the HTML and JavaScript files are linked properly?
 
 
