@@ -19,7 +19,7 @@
         $league = isset($_GET['league']) ? $_GET['league'] : 'PL';
 
         // Your API key
-        $apiKey = '5263d7829d224fd291d236a47f22d29d';
+        $apiKey = ####################;
 
         // API URL for Standings
         $uriStandings = 'https://api.football-data.org/v4/competitions/' . $league . '/standings';
